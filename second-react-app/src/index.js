@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import SecondApp from './SecondApp';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('react-app'));
+const root = ReactDOM.createRoot(document.getElementById('second-section'));
 root.render(
   <React.StrictMode>
-    <App />
+    <SecondApp />
   </React.StrictMode>
 );
 

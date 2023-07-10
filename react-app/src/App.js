@@ -1,13 +1,12 @@
-import React, {useState} from 'react'
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-  const [showOverlay, setShowOverlay] = useState(false)
-  console.log(showOverlay)
+  const [showOverlay, setShowOverlay] = useState(false);
   return (
     <div className="App">
-      {showOverlay && <div className='App-overlay'>overlay content</div>}
+      {showOverlay && <div className="App-overlay"><button onClick={()=>setShowOverlay(false)}>Close Overlay</button></div>}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,7 +16,7 @@ function App() {
           className="App-link"
           target="_blank"
           rel="noopener noreferrer"
-          onClick={()=>setShowOverlay(true)}
+          onClick={() => setShowOverlay(true)}
         >
           Open overlay
         </button>
